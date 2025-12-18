@@ -6,6 +6,11 @@ theme: "PaperMod"
 # Don't publish drafts
 buildDrafts: false
 buildFuture: true
+canonifyURLs: true
+
+# Force HTTPS
+relativeURLs: false
+uglyURLs: false
 
 params:
   defaultTheme: "auto"
