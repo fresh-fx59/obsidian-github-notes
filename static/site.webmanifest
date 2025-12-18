@@ -1,16 +1,16 @@
 {
-  "name": "AI Engineers Helper",
-  "short_name": "AI Engineers",
+  "name": "Eternal Laws of Borderless Universe",
+  "short_name": "ELBU",
   "icons": [
     {
-      "src": "/android-chrome-192x192.png",
+      "src": "/favicon-192x192.jpg",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/jpg"
     },
     {
-      "src": "/android-chrome-512x512.png",
-      "sizes": "512x512",
-      "type": "image/png"
+      "src": "/favicon-256x256.jpg",
+      "sizes": "256x256",
+      "type": "image/jpg"
     }
   ],
   "theme_color": "#ffffff",
