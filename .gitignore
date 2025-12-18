@@ -1,0 +1,22 @@
+# Hugo
+public/
+resources/_gen/
+.hugo_build.lock
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Obsidian (keep only content, not Obsidian config)
+.obsidian/
+.trash/
+
+# Editor
+*.swp
+*.swo
+*~
+.idea/
+
+# Local docker-compose (not needed in CI)
+docker-compose.yml
+Dockerfile

@@ -1,0 +1,70 @@
+baseURL: "https://pushsalo.com/"
+languageCode: "en-us"
+title: "ELBU"
+theme: "PaperMod"
+
+# Don't publish drafts
+buildDrafts: false
+
+params:
+  defaultTheme: "auto"
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  mainSections: ["posts"]
+
+  # Favicon configuration
+  assets:
+    favicon: "/favicon.ico"
+    favicon16x16: "/favicon-16x16.jpg"
+    favicon32x32: "/favicon-32x32.jpg"
+    apple_touch_icon: "/favicon-32x32.jpg"
+
+  # Profile mode - cleaner home page layout
+  profileMode:
+    enabled: true
+    title: "Eternal Laws of Borderless Universe"
+    subtitle: "We build things that live forever and die in one day"
+    imageUrl: "" # Optional: add profile image path like "/images/avatar.png"
+    imageWidth: 120
+    imageHeight: 120
+    buttons:
+      - name: Posts
+        url: /posts
+      - name: Tags
+        url: /tags
+
+  socialIcons:
+    - name: "GitHub"
+      url: "https://github.com/fresh-fx59/pushsalo.com"
+    - name: "LinkedIn"
+      url: "https://www.linkedin.com/feed/update/urn:li:activity:7406580471947571200?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7406580471947571200%2C7406632267827093504%29&replyUrn=urn%3Ali%3Acomment%3A%28activity%3A7406580471947571200%2C7407053185736970240%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287406632267827093504%2Curn%3Ali%3Aactivity%3A7406580471947571200%29&dashReplyUrn=urn%3Ali%3Afsd_comment%3A%287407053185736970240%2Curn%3Ali%3Aactivity%3A7406580471947571200%29"
+
+menu:
+  main:
+    - identifier: "posts"
+      name: "Posts"
+      url: "/posts/"
+      weight: 10
+    - identifier: "tags"
+      name: "Tags"
+      url: "/tags/"
+      weight: 20
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+
+markup:
+  goldmark:
+    renderer:
+      hardWraps: true
+  highlight:
+    codeFences: true
+    guessSyntax: true
+    lineNos: false
+    style: "monokai"
