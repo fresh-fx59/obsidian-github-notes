@@ -5,7 +5,7 @@ theme: "PaperMod"
 
 # Don't publish drafts
 buildDrafts: false
-buildFutures: true
+buildFuture: true
 
 params:
   defaultTheme: "auto"
@@ -25,7 +25,7 @@ params:
 
   # Profile mode - cleaner home page layout
   profileMode:
-    enabled: false
+    enabled: true
     title: "Eternal Laws of Borderless Universe"
     subtitle: "We build things that live forever and die in one day"
     imageUrl: "" # Optional: add profile image path like "/images/avatar.png"
