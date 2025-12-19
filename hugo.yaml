@@ -1,11 +1,14 @@
-baseURL: "https://pushsalo.com/"
+baseURL: "https://fresh-fx59.github.io/obsidian-github-notes/"
 languageCode: "en-us"
 title: "ELBU"
 theme: "PaperMod"
 
 # Don't publish drafts
 buildDrafts: false
+# Publish those post that seemed to be in the future. 
+# If today is 19 of November 2025, and you publish post today, yor post won't be visible without this flag to true
 buildFuture: true
+# I have errors with image links due to http/https issues
 canonifyURLs: true
 
 # Force HTTPS
@@ -44,7 +47,7 @@ params:
 
   socialIcons:
     - name: "GitHub"
-      url: "https://github.com/fresh-fx59/pushsalo.com"
+      url: "https://github.com/fresh-fx59/obsidian-github-notes"
     - name: "LinkedIn"
       url: "https://www.linkedin.com/feed/update/urn:li:activity:7406580471947571200?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7406580471947571200%2C7406632267827093504%29&replyUrn=urn%3Ali%3Acomment%3A%28activity%3A7406580471947571200%2C7407053185736970240%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287406632267827093504%2Curn%3Ali%3Aactivity%3A7406580471947571200%29&dashReplyUrn=urn%3Ali%3Afsd_comment%3A%287407053185736970240%2Curn%3Ali%3Aactivity%3A7406580471947571200%29"
 
