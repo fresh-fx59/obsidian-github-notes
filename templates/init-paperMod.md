@@ -37,93 +37,93 @@ function getAllFolders() {
 try {
     const folders = getAllFolders();
     if (!folders || folders.length === 0) {
-        new Notice("Не удалось получить список папок в хранилище.");
+        new Notice("Failed to get folder list from vault.");
         return;
     }
 
-    // Выбор базовой папки
-    const basePath = await tp.system.suggester(folders, folders, false, "Выберите папку для поста:");
+    // Select base folder
+    const basePath = await tp.system.suggester(folders, folders, false, "Select folder for post:");
     if (!basePath) {
-        new Notice("Выбор папки отменён.");
+        new Notice("Folder selection cancelled.");
         return;
     }
 
     const today = tp.date.now("YYYY-MM-DD");
-    const rusName = await tp.system.prompt("Введите название поста (на русском):");
-    if (!rusName) {
-        new Notice("Название не введено — отменено.");
+    const postTitle = await tp.system.prompt("Enter post title:");
+    if (!postTitle) {
+        new Notice("Title not entered - cancelled.");
         return;
     }
 
-    const slug = translit(rusName) || "untitled";
+    const slug = translit(postTitle) || "untitled";
     const folderName = `${today}-${slug}`;
     const finalPath = `${basePath}/${folderName}`;
 
-    // Создаём папку для поста
+    // Create folder for post
     await app.vault.createFolder(finalPath).catch(()=>{});
 
-    // Создаём папку attachments
+    // Create attachments folder
     const attachmentsPath = `${finalPath}/attachments`;
     await app.vault.createFolder(attachmentsPath).catch(()=>{});
     await app.vault.create(`${attachmentsPath}/.gitkeep`, '').catch(()=>{});
 
-    // Категория из пути
+    // Category from path
     const categoryName = basePath.split("/").pop();
 
     // === PaperMod-specific options ===
 
-    // Спрашиваем про обложку
+    // Ask about cover image
     const wantCover = await tp.system.suggester(
-        ["Да, добавить обложку", "Нет, без обложки"],
+        ["Yes, add cover image", "No, no cover image"],
         [true, false],
         false,
-        "Добавить обложку (cover image)?"
+        "Add cover image?"
     );
 
     let coverSection = '';
     if (wantCover) {
-        const coverFile = await tp.system.prompt("Имя файла обложки (например, cover.jpg):", "cover.jpg");
+        const coverFile = await tp.system.prompt("Cover image filename (e.g., cover.jpg):", "attachments/cover.png");
         const coverHidden = await tp.system.suggester(
-            ["Показывать на странице", "Скрыть на странице (только для OpenGraph)"],
+            ["Show on page", "Hide on page (for OpenGraph only)"],
             [false, true],
             false,
-            "Показывать обложку на странице?"
+            "Show cover image on page?"
         );
 
         coverSection = `cover:
   image: ${coverFile}
-  alt: "${rusName}"
+  alt: "${postTitle}"
   caption: ""
   relative: false
   hidden: ${coverHidden}`;
     }
 
-    // Спрашиваем про оглавление (TOC)
+    // Ask about table of contents (TOC)
     const showToc = await tp.system.suggester(
-        ["Да, показывать оглавление", "Нет, без оглавления"],
+        ["Yes, show table of contents", "No, no table of contents"],
         [true, false],
         false,
-        "Показывать оглавление (Table of Contents)?"
+        "Show table of contents?"
     );
 
     const tocOpen = showToc ? await tp.system.suggester(
-        ["Свёрнутое", "Развёрнутое"],
+        ["Collapsed", "Expanded"],
         [false, true],
         false,
-        "Оглавление по умолчанию:"
+        "Default table of contents state:"
     ) : false;
 
-    // Теги
-    const tagsInput = await tp.system.prompt("Теги (через запятую):", "ai");
+    // Tags
+    const tagsInput = await tp.system.prompt("Tags (comma separated):", "ai");
     const tags = tagsInput ? tagsInput.split(',').map(t => t.trim()).filter(t => t) : ["ai"];
 
-    // Описание
-    const description = await tp.system.prompt("Краткое описание поста:", "Описание поста.");
+    // Description
+    const description = await tp.system.prompt("Brief post description:", "Post description.");
 
-    // Формируем фронтматтер
+    // Generate frontmatter
     const frontmatter = `---
 draft: true
-title: ${JSON.stringify(rusName)}
+title: ${JSON.stringify(postTitle)}
 date: ${today}
 lastmod:
 author: Aleksei Aksenov
@@ -150,36 +150,36 @@ disableShare: false
 hideSummary: false
 searchHidden: false
 
-${coverSection ? coverSection : '# cover: # Uncomment to add cover image\n#   image: cover.jpg\n#   alt: ""\n#   caption: ""\n#   relative: false\n#   hidden: false'}
+${coverSection ? coverSection : '# cover: # Uncomment to add cover image\n#   image: attachments/cover.png\n#   alt: ""\n#   caption: ""\n#   relative: false\n#   hidden: false'}
 ---
 
-## Введение
+## Introduction
 
-${rusName}
+${postTitle}
 
-## Основное содержание
+## Main Content
 
-Напишите содержание здесь.
+Write content here.
 
-## Заключение
+## Conclusion
 
-Итоги и выводы.
+Summary and conclusions.
 `;
 
-    // Создаём index.md
+    // Create index.md
     const targetPath = `${finalPath}/index.md`;
     const existing = app.vault.getAbstractFileByPath(targetPath);
     if (existing) {
-        new Notice(`⚠️ Уже существует: ${targetPath}`);
+        new Notice(`⚠️ Already exists: ${targetPath}`);
         await app.workspace.getLeaf().openFile(existing);
     } else {
         const newFile = await app.vault.create(targetPath, frontmatter);
-        new Notice(`✅ Создано: ${targetPath}`);
+        new Notice(`✅ Created: ${targetPath}`);
         await app.workspace.getLeaf().openFile(newFile);
     }
 
 } catch (err) {
-    new Notice("Ошибка скрипта: " + (err?.message ?? String(err)));
+    new Notice("Script error: " + (err?.message ?? String(err)));
     console.error(err);
 }
 %>
