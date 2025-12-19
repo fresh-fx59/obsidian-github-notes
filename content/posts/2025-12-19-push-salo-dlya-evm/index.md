@@ -1,6 +1,6 @@
 ---
 draft: false
-title: Пуш сало для ЭВМ
+title: Cannon Grease for ECM
 date: 2025-12-19
 lastmod:
 author: Aleksei Aksenov
@@ -16,21 +16,21 @@ TocOpen: false
 weight: 1
 hidemeta: false
 comments: false
-description: Влияние пушечного сало на энергию ЭВМ
+description: The Influence of Cannon Grease on Computer Energy
 disableShare: false
 hideSummary: false
 searchHidden: false
 cover:
   image: attachments/cover.png
-  alt: Пуш сало для ЭВМ
+  alt: Cannon Grease for ECM
   caption: ""
   relative: false
   hidden: false
 ---
-Пушечное сало не дает выйти вычислительной энергии за пределы системного блока.  
-  
-Поэтому все отверстия, щели, стыки мазать строго густым слоем, на совесть. Так больше мощности внутри останется.  
-  
-Бонусом - незабываемый аромат. Говорят оказывает положительное влияние на сердечно сосудистую систему. А если лизнуть, то никаких витаминов не надо больше.  
-  
-Но только один раз и перед сном. Чтобы не выветрилось.
+Cannon grease prevents computational energy from escaping the PC case. 
+
+Therefore, all vents, gaps, and joints must be smeared with a strictly thick layer—don't skimp. 
+
+That way, more power remains inside. As a bonus, you get an unforgettable aroma. 
+
+They say it has a positive effect on the cardiovascular system. And if you give it a lick, you won't need vitamins ever again. But do it only once and right before bed. So it doesn't wear off.
