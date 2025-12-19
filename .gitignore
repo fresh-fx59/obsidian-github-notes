@@ -8,7 +8,6 @@ resources/_gen/
 Thumbs.db
 
 # Obsidian (keep only content, not Obsidian config)
-.obsidian/
 .trash/
 
 # Editor

@@ -1,0 +1,255 @@
+{
+  "main": {
+    "id": "8deeb909a157578c",
+    "type": "split",
+    "children": [
+      {
+        "id": "c089b410b3415842",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "28f9cdf105fe0ad3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/posts/2025-12-19-push-salo-dlya-evm/index.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "index"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "b2da448e5ad76d80",
+    "type": "split",
+    "children": [
+      {
+        "id": "097e6ae4bfca9532",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "97205a85fb6a3782",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "e3114442362c9f8d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "66a115871ff71cb7",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 228.5
+  },
+  "right": {
+    "id": "47801b77e59c075c",
+    "type": "split",
+    "children": [
+      {
+        "id": "e58262cc68952944",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ce9e868741103b43",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "templates/init.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for init"
+            }
+          },
+          {
+            "id": "7ba2a2ae1d457d81",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "templates/init.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from init"
+            }
+          },
+          {
+            "id": "f9f76ccfd1ffc70f",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "d052d0dd91614175",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "3ca17db95bae1494",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "templates/init.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of init"
+            }
+          },
+          {
+            "id": "a3f1db837e6df6c6",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "content/posts/2025-12-19-push-salo-dlya-evm/index.md"
+              },
+              "icon": "lucide-info",
+              "title": "File properties for index"
+            }
+          },
+          {
+            "id": "1bbd5c32a16049d0",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          }
+        ],
+        "currentTab": 6
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "obsidian-git:Open Git source control": false,
+      "templater-obsidian:Templater": false
+    }
+  },
+  "active": "28f9cdf105fe0ad3",
+  "lastOpenFiles": [
+    "content/posts/2025-12-19-samyy-luchshiy-post/index.md",
+    "content/posts/2025-12-19-push-salo-dlya-evm/index.md",
+    "content/posts/2025-12-19-samyy-luchshiy-post/attachments",
+    "content/posts/2025-12-19-samyy-luchshiy-post",
+    "readme.md",
+    "content/posts/2025-12-19-push-salo-dlya-evm/attachments/cover.png",
+    "content/posts/2025-12-19-push-salo-dlya-evm/attachments",
+    "content/posts/2025-12-19-push-salo-dlya-evm/cover.png",
+    "layouts/partials/google_analytics.html",
+    "layouts/partials",
+    "layouts",
+    "themes/PaperMod/theme.toml",
+    "themes/PaperMod/layouts/partials/templates/_funcs/get-page-images.html",
+    "themes/PaperMod/layouts/partials/templates/_funcs",
+    "themes/PaperMod/layouts/partials/templates/twitter_cards.html",
+    "themes/PaperMod/images/tn.png",
+    "themes/PaperMod/images/screenshot.png",
+    "themes/PaperMod/README.md",
+    "content/posts/_index.md",
+    "content/posts/2025-12-12-auto-post-publishing-obsidian-github-actions-linux-server/index.md",
+    "archetypes/default.md",
+    "content/posts/2025-12-12-nastraivaem-cline-ispolzovat-qwen-coder-cherez-api-ot-cloud.ru/index.md",
+    "content/posts/2025-12-12.md",
+    "content/posts/2025-12-12-nastraivaem-cline-ispolzovat-qwen-coder-cherez-api-ot-cloud.ru/attachments/cover.png",
+    "content/posts/2025-12-12-nastraivaem-cline-ispolzovat-qwen-coder-cherez-api-ot-cloud.ru/attachments/Pasted image 20251212014027.png",
+    "content/posts/2025-12-12-nastraivaem-cline-ispolzovat-qwen-coder-cherez-api-ot-cloud.ru/attachments/Pasted image 20251212013940.png",
+    "content/posts/2025-12-12-nastraivaem-cline-ispolzovat-qwen-coder-cherez-api-ot-cloud.ru/attachments/Pasted image 20251212013642.png",
+    "content/posts/2025-12-12-nastraivaem-cline-ispolzovat-qwen-coder-cherez-api-ot-cloud.ru/attachments/Pasted image 20251212013414.png",
+    "content/posts/2025-12-12-nastraivaem-cline-ispolzovat-qwen-coder-cherez-api-ot-cloud.ru/attachments/Pasted image 20251212013347.png",
+    "templates/init-paperMod.md",
+    "content/posts/2025-12-11-novaya-zametka-s-kartinkoy/index.md",
+    "content/posts/2025-12-11-eshche-odin-post-s-kartinkoy/index.md",
+    "content/posts/2025-12-09-post-s-kartinkoy/index.md",
+    "content/posts/2025-12-10-zametka-iz-templeytera/index.md",
+    "content/posts/welcome-with-image.md",
+    "templates/init.md",
+    "content/posts/2025-12-09-post-s-kartinkoy/_index.md",
+    "CLAUDE.md",
+    "content/posts/2025-12-09-post-s-kartinkoy/postfile.md",
+    "content/posts/welcome.md",
+    "content/posts/Post with picture.md",
+    "content/posts/post-with-picture.md"
+  ]
+}

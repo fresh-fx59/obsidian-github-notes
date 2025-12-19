@@ -1,0 +1,10 @@
+{
+  "strictLineBreaks": true,
+  "useTab": false,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "content/posts",
+  "newLinkFormat": "relative",
+  "useMarkdownLinks": true,
+  "attachmentFolderPath": "./attachments",
+  "promptDelete": false
+}
